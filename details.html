@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FoodLens - Product Details</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="details.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div class="container py-4">
+    <!-- Back and Share buttons -->
+    <div class="d-flex justify-content-between mb-4">
+      <button class="btn"><i class="fas fa-arrow-left"></i></button>
+      <div>
+        <button class="btn"><i class="fas fa-share-alt"></i></button>
+        <button class="btn"><i class="fas fa-ellipsis-v"></i></button>
+      </div>
+    </div>
+
+    <!-- Product Header -->
+    <div class="product-card mb-4">
+      <div class="d-flex align-items-start gap-4">
+        <div class="product-image-container">
+          <img src="https://placehold.co/400x400" alt="Britannia Milk Bikis" class="product-image main-image" id="mainImage">
+          <div class="thumbnail-gallery">
+            
+          </div>
+          
+        </div>
+        <div class="flex-grow-1">
+          <h1 class="product-title">Britannia Milk Bikis</h1>
+          <div class="rating-block">
+            <div class="rating-score">1.9</div>
+            <div class="rating-text">Out of 5</div>
+            <div class="rating-label">Poor</div>
+          </div>
+        </div>
+        <button class="btn heart-btn"><i class="far fa-heart"></i></button>
+        <button class="btn list-btn"><i class="far fa-list-alt"></i></button>
+      </div>
+    </div>
+    <!-- Scoring Section -->
+    <div class="scoring-section mb-4">
+      <div class="score-cards">
+        <div class="score-card eco">
+          <div class="score-label">Eco-Score</div>
+          <div class="score-value">B</div>
+          <div class="score-icon"><i class="fas fa-leaf"></i></div>
+        </div>
+        <div class="score-card nova">
+          <div class="score-label">NOVA Score</div>
+          <div class="score-value">4</div>
+          <div class="score-icon"><i class="fas fa-industry"></i></div>
+        </div>
+        <div class="score-card nutri">
+          <div class="score-label">Nutri-Score</div>
+          <div class="score-value">C</div>
+          <div class="score-icon"><i class="fas fa-apple-alt"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portion Toggle -->
+    <div class="portion-toggle mb-4">
+      <button class="active">Per 100 g</button>
+      
+    </div>
+
+
+
+    <!-- Concerns Section -->
+    <section class="mb-4">
+      <h2 class="section-title">What Concerns Us 😟</h2>
+      <div class="nutrition-list">
+        <div class="nutrition-item concern">
+          <i class="fas fa-industry"></i>
+          <span>Processing Level</span>
+          <span class="value">Ultra-Processed</span>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="nutrition-item concern">
+          <i class="fas fa-flask"></i>
+          <span>Additives</span>
+          <span class="value">1</span>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="nutrition-item concern">
+          <i class="fas fa-bolt"></i>
+          <span>Energy</span>
+          <span class="value">482.0 kcal</span>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="nutrition-item concern">
+          <i class="fas fa-cookie"></i>
+          <span>Total Sugars</span>
+          <span class="value">24.4 g</span>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="nutrition-item concern">
+          <i class="fas fa-plus-circle"></i>
+          <span>Added Sugars</span>
+          <span class="value">22.5 g</span>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="mb-4">
+      <h2 class="section-title">What We Like 😊</h2>
+      <div class="nutrition-list">
+        <div class="nutrition-item benefit">
+          <i class="fas fa-dumbbell"></i>
+          <span>Protein</span>
+          <span class="value">7.9g</span>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+        <div class="nutrition-item benefit">
+          <i class="fas fa-heart"></i>
+          <span>Cholesterol</span>
+          <span class="value">3.0mg</span>
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Age-based Consumption Guide -->
+    <section class="mb-4">
+      <h2 class="section-title">Consumption Guide By Age 👥</h2>
+      <div class="age-consumption-list">
+        <div class="consumption-item">
+          <div class="age-group">
+            <i class="fas fa-baby"></i>
+            <span>0-12 months</span>
+          </div>
+          <div class="recommendation not-recommended">
+            <i class="fas fa-times-circle"></i>
+            <span>Not Recommended</span>
+          </div>
+        </div>
+        <div class="consumption-item">
+          <div class="age-group">
+            <i class="fas fa-child"></i>
+            <span>1-5 years</span>
+          </div>
+          <div class="recommendation limited">
+            <i class="fas fa-exclamation-circle"></i>
+            <span>Not Recommended</span>
+          </div>
+        </div>
+        <div class="consumption-item">
+          <div class="age-group">
+            <i class="fas fa-running"></i>
+            <span>6-12 years</span>
+          </div>
+          <div class="recommendation moderate">
+            <i class="fas fa-check-circle"></i>
+            <span>1</span>
+          </div>
+        </div>
+        <div class="consumption-item">
+          <div class="age-group">
+            <i class="fas fa-user"></i>
+            <span>12+ years</span>
+          </div>
+          <div class="recommendation normal">
+            <i class="fas fa-check-circle"></i>
+            <span>2-3</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expandable Sections -->
+    <div class="accordion" id="productDetails">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nutrientsCollapse">
+            All Nutrients
+          </button>
+        </h2>
+        <div id="nutrientsCollapse" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <ul class="list-group">
+              <li class="list-group-item">Calories: 482 kcal</li>
+              <li class="list-group-item">Total Fat: 12g</li>
+              <li class="list-group-item">Protein: 7.9g</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#ingredientsCollapse">
+            All Ingredients
+          </button>
+        </h2>
+        <div id="ingredientsCollapse" class="accordion-collapse collapse">
+          <div class="accordion-body">
+            <p>Whole grain wheat, sugar, cocoa powder, salt, natural flavors</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Alternatives Section -->
+<!-- Alternatives Section -->
+<section class="mb-4">
+  <h2 class="section-title"><pre class="section-title">         Smart Alternatives</pre></h2>
+  <ul class="alternative-points">
+    <li><i class="fas fa-check-circle"></i> <strong>unsweetened yogurt</strong> instead of flavored ones.</li>
+    <li><i class="fas fa-check-circle"></i> <strong>baked chips</strong> over fried snacks.</li>
+    <li><i class="fas fa-check-circle"></i> <strong>whole fruits</strong> rather than sugary juices.</li>
+    <li><i class="fas fa-check-circle"></i> <strong>soda with sparkling water</strong> or infused drinks.</li>
+  </ul>
+</section>
+<div class="chatbot-icon">
+  <button class="btn btn-primary rounded-circle" onclick="document.location.href='chatbot.html';">
+    <i class="fas fa-robot"></i>
+  </button>
+</div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="details.js"></script>
+</body>
+</html>
